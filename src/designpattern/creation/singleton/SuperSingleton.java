@@ -3,7 +3,6 @@ package designpattern.creation.singleton;
 /**
  * Created by ZhangJing on 2017/3/8.
  *
- *
  * 饿汉式单例类不能实现延迟加载，不管将来用不用始终占据内存;
  * 懒汉式单例类线程安全控 制烦琐，而且性能受影响。
  *
