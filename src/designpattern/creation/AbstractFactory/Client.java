@@ -11,7 +11,8 @@ public class Client {
         TextField textField;
         ComboBox comboBox;
 
-        skinFactory = (SkinFactory)XMLUtil.getBean();
+ //       skinFactory = (SkinFactory)XMLUtil.getBean();
+        skinFactory = new SpringSkinFactory();
         button = skinFactory.createButton();
         textField = skinFactory.createTextField();
         comboBox = skinFactory.createComboBox();
