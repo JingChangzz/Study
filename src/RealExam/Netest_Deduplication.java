@@ -1,7 +1,5 @@
 package RealExam;
 
-import java.util.Scanner;
-
 /**
  * Created by ZhangJing on 2017/3/2.
  *
@@ -12,7 +10,7 @@ public class Netest_Deduplication {
     public static String removeDuplicates(String A) {
         int i = 1, j =0, num = 1;
         String result = "";
-        if (A.length() == 0 || A.length() > 1000){
+        if (A.length() == 0){
             return  null;
         }
         for(; i < A.length(); i++){
@@ -31,11 +29,11 @@ public class Netest_Deduplication {
     }
 
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+        String[] B = new String[]{"A"};
+        String[] A = new String[]{"A","a","A","a","b","d",};
 
-        String in = scanner.nextLine();
-
-        System.out.println(removeDuplicates(in));
+        String s = "";
+        System.out.println(removeDuplicates(s));
     }
 
 }

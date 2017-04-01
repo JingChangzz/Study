@@ -30,7 +30,7 @@ public class updateLazySingleton {
 
         if (instance == null){
             synchronized (updateLazySingleton.class){
-                if (instance == null){
+                if (instance == null){  //2次判断
                     instance = new updateLazySingleton();
                 }
             }

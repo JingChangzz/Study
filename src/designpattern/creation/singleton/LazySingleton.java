@@ -14,6 +14,8 @@ package designpattern.creation.singleton;
  *
  * 缺点：每次调用getInstance()时都需要进行线程锁定判断，
  * 在多线程高并发访问环境中，将会导致系统性能大大降低
+ *
+ *
  */
 
 public class LazySingleton {

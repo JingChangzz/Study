@@ -1,53 +1,47 @@
 package dataStructrue;
 
-public class ShellSort {
-	private long[] theArray;
-	private int nElems;
-	
-	public ShellSort(int max) {
-		theArray = new long[max];
-		nElems = 0;
-	}
-	
-	private void insert(long value) {
-		theArray[nElems] = value;
-		nElems++;
-	}
-	
-	public void display() {
-		System.out.println("A=");
-		for (int i = 0; i < nElems; i++) {
-			System.out.println(theArray[i] + "	");
-		}
-		System.out.println("");
-	}
-	
-	public void shellsort() {
-		int inner, outer;
-		long temp;
-		
-		int h = 1;
-		while(h <= nElems/3){
-			h = h*3 + 1;
-		}
-		
-		while(h > 0){
-			for (outer = 0; outer < nElems; outer++) {
-				temp = theArray[outer];
-				inner = outer;
-			
-				while(inner > h-1 && theArray[inner-h] >= temp){
-					theArray[inner] = theArray[inner-h];
-					inner = h;
+import java.util.Arrays;
+
+/**
+ * 希尔排序
+ *
+ * 直接插入排序的拓展
+ *
+ *
+ *
+ */
+public class ShellSort{
+
+	public static void shellSortSmallToBig(int[] data) {
+		int j = 0;
+		int temp = 0;
+
+		for (int increment = data.length / 2; increment > 0; increment /= 2) {
+			System.out.println("increment:" + increment); //步长
+
+			for (int i = increment; i < data.length; i++) {
+				temp = data[i];
+				for (j = i - increment; j >= 0; j -= increment) {
+				// System.out.println("j:" + j);
+				// System.out.println("temp:" + temp);
+				// System.out.println("data[" + j + "]:" + data[j]);
+					if (temp < data[j]) {
+						data[j + increment] = data[j];
+					} else {
+						break;
+					}
 				}
-				theArray[inner] = temp;
+				data[j + increment] = temp;
 			}
-			h = (h-1)*3;
+
+			for (int i = 0; i < data.length; i++)  //打印每轮排序结果
+				System.out.print(data[i] + " ");
 		}
 	}
-	
+
 	public static void main(String[] args) {
-		int maxSize = 10;
-		ShellSort shellSort = new ShellSort(maxSize);
+		int[] data = new int[] { 26, 53, 67, 48, 57, 13, 48, 32, 60, 50 };
+		shellSortSmallToBig(data);
+		System.out.println(Arrays.toString(data));
 	}
 }

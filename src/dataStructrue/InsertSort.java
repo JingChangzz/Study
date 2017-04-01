@@ -1,5 +1,13 @@
 package dataStructrue;
 
+/**
+ * 插入排序
+ *
+ * 时间复杂度O(n*n)
+ * 
+ *
+ */
+
 public class InsertSort {
 
 	private long[] a;
@@ -42,7 +50,20 @@ public class InsertSort {
 		}
 	}
 	
-	
+	public void sort(){
+		System.out.println(nElems);
+		for (int i = 0; i < nElems-1; i++){
+			int j = i+1;
+			while(j>0 && a[j] < a[j-1]){
+				swap(j,j-1);
+				j--;
+			}
+		}
+
+	}
+
+
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int maxSize = 10;
@@ -56,7 +77,7 @@ public class InsertSort {
 		iSort.insert(1);
 		
 		iSort.display();
-		iSort.iSort();
+		iSort.sort();
 		iSort.display();
 	}
 

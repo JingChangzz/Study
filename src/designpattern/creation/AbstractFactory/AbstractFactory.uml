@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>designpattern.creation.AbstractFactory</OriginalElement>
+  <nodes>
+    <node x="854.0" y="167.0">designpattern.creation.AbstractFactory.SummerComboBox</node>
+    <node x="230.58653846153845" y="304.0">designpattern.creation.AbstractFactory.SpringSkinFactory</node>
+    <node x="1264.0" y="167.0">designpattern.creation.AbstractFactory.SummerButton</node>
+    <node x="197.0" y="167.0">designpattern.creation.AbstractFactory.SpringTextField</node>
+    <node x="261.08653846153845" y="467.0">designpattern.creation.AbstractFactory.Client</node>
+    <node x="1065.0" y="167.0">designpattern.creation.AbstractFactory.SummerTextField</node>
+    <node x="918.5" y="304.0">designpattern.creation.AbstractFactory.SummerSkinFactory</node>
+    <node x="567.0" y="141.0">designpattern.creation.AbstractFactory.SkinFactory</node>
+    <node x="824.2980769230769" y="0.0">designpattern.creation.AbstractFactory.Button</node>
+    <node x="635.7980769230769" y="0.0">designpattern.creation.AbstractFactory.TextField</node>
+    <node x="382.0" y="167.0">designpattern.creation.AbstractFactory.SpringButton</node>
+    <node x="437.79807692307696" y="0.0">designpattern.creation.AbstractFactory.ComboBox</node>
+    <node x="0.0" y="573.0">designpattern.creation.AbstractFactory.XMLUtil</node>
+    <node x="0.0" y="167.0">designpattern.creation.AbstractFactory.SpringComboBox</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="designpattern.creation.AbstractFactory.Client" target="designpattern.creation.AbstractFactory.SpringSkinFactory">
+      <point x="0.0" y="-30.5" />
+      <point x="0.0" y="56.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SpringComboBox" target="designpattern.creation.AbstractFactory.ComboBox">
+      <point x="0.0" y="-30.5" />
+      <point x="88.5" y="101.0" />
+      <point x="479.04807692307696" y="101.0" />
+      <point x="-41.25" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SummerButton" target="designpattern.creation.AbstractFactory.Button">
+      <point x="0.0" y="-30.5" />
+      <point x="1346.5" y="81.0" />
+      <point x="948.0480769230769" y="81.0" />
+      <point x="41.25" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SpringSkinFactory" target="designpattern.creation.AbstractFactory.SpringComboBox">
+      <point x="-100.125" y="-56.5" />
+      <point x="263.96153846153845" y="284.0" />
+      <point x="88.5" y="284.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SpringSkinFactory" target="designpattern.creation.AbstractFactory.SpringButton">
+      <point x="33.375" y="-56.5" />
+      <point x="397.46153846153845" y="274.0" />
+      <point x="464.5" y="274.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SpringTextField" target="designpattern.creation.AbstractFactory.TextField">
+      <point x="0.0" y="-30.5" />
+      <point x="279.5" y="111.0" />
+      <point x="677.0480769230769" y="111.0" />
+      <point x="-41.25" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SummerSkinFactory" target="designpattern.creation.AbstractFactory.SummerComboBox">
+      <point x="-33.375" y="-56.5" />
+      <point x="1018.625" y="274.0" />
+      <point x="949.5" y="274.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SummerComboBox" target="designpattern.creation.AbstractFactory.ComboBox">
+      <point x="0.0" y="-30.5" />
+      <point x="949.5" y="101.0" />
+      <point x="561.5480769230769" y="101.0" />
+      <point x="41.25" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SpringSkinFactory" target="designpattern.creation.AbstractFactory.SpringTextField">
+      <point x="-33.375" y="-56.5" />
+      <point x="330.71153846153845" y="284.0" />
+      <point x="279.5" y="284.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SummerSkinFactory" target="designpattern.creation.AbstractFactory.SummerTextField">
+      <point x="33.375" y="-56.5" />
+      <point x="1085.375" y="274.0" />
+      <point x="1154.5" y="274.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SpringButton" target="designpattern.creation.AbstractFactory.Button">
+      <point x="0.0" y="-30.5" />
+      <point x="464.5" y="121.0" />
+      <point x="865.5480769230769" y="121.0" />
+      <point x="-41.25" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SummerSkinFactory" target="designpattern.creation.AbstractFactory.SummerButton">
+      <point x="100.125" y="-56.5" />
+      <point x="1152.125" y="284.0" />
+      <point x="1346.5" y="284.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SummerTextField" target="designpattern.creation.AbstractFactory.TextField">
+      <point x="0.0" y="-30.5" />
+      <point x="1154.5" y="91.0" />
+      <point x="759.5480769230769" y="91.0" />
+      <point x="41.25" y="30.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SpringSkinFactory" target="designpattern.creation.AbstractFactory.SkinFactory">
+      <point x="100.125" y="-56.5" />
+      <point x="464.21153846153845" y="284.0" />
+      <point x="633.75" y="284.0" />
+      <point x="-66.75" y="56.5" />
+    </edge>
+    <edge source="designpattern.creation.AbstractFactory.SummerSkinFactory" target="designpattern.creation.AbstractFactory.SkinFactory">
+      <point x="-100.125" y="-56.5" />
+      <point x="951.875" y="284.0" />
+      <point x="767.25" y="284.0" />
+      <point x="66.75" y="56.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8072727272727273" x="594.4144144144144" y="185.0" />
+  <SelectedNodes>
+    <node>designpattern.creation.AbstractFactory.Client</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

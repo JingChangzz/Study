@@ -43,7 +43,7 @@ public class BubbleSort {
 		bubbleSort.insert(17);
 		bubbleSort.insert(7);
 		bubbleSort.insert(3);
-		bubbleSort.insert(27);
+		bubbleSort.insert(1);
 		
 		bubbleSort.display();
 		
@@ -53,7 +53,8 @@ public class BubbleSort {
 					bubbleSort.swap(j, j+1);
 				}
 			}
+			bubbleSort.display();
 		}
-		bubbleSort.display();
+
 	}
 }

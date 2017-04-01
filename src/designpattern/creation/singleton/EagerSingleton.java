@@ -11,12 +11,12 @@ package designpattern.creation.singleton;
  */
 public class EagerSingleton {
 
-    private static final EagerSingleton insstance = new EagerSingleton();
+    private static final EagerSingleton instance = new EagerSingleton();
 
     private EagerSingleton(){}
 
     public static EagerSingleton getInsstance(){
 
-        return insstance;
+        return instance;
     }
 }
