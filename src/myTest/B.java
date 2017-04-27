@@ -1,5 +1,8 @@
 package myTest;
 
+import java.io.File;
+import java.io.FileReader;
+
 /**
  * Created by ZhangJing on 2017/2/18.
  */
@@ -47,24 +50,39 @@ public class B
 
     String str = new String("good");
     char[] ch = {'a','b','c'};
+
     int i = 123;
+
+    private static int total = 10;
+    public void call(){
+        int total = 5;
+        System.out.println(this.total);
+    }
+    File aFile;
+    B(){
+        MyOtherClass otherClass = new MyOtherClass();
+    }
+
     public static void main(String[] args) {
-        B ex = new B();
-        ex.change(ex.str, ex.ch,ex.i, ex);
-        System.out.print(ex.str +" and " );
-        System.out.print(ex.ch);
-        System.out.print(" and "+ex.i);
+        
 
-         Integer first = new Integer(3);
-        Integer second = 3;
-        int three = 3;
-        System.out.println(first==second);
-        System.out.println(first==three);
 
-        int i=128;
-        Integer j = new Integer(128);
-        System.out.println(i==j);
-        System.out.println(j.equals(i));
+//        B ex = new B();
+//        ex.change(ex.str, ex.ch,ex.i, ex);
+//        System.out.print(ex.str +" and " );
+//        System.out.print(ex.ch);
+//        System.out.print(" and "+ex.i);
+//
+//         Integer first = new Integer(3);
+//        Integer second = 3;
+//        int three = 3;
+//        System.out.println(first==second);
+//        System.out.println(first==three);
+//
+//        int i=128;
+//        Integer j = new Integer(128);
+//        System.out.println(i==j);
+//        System.out.println(j.equals(i));
 
     }
 
@@ -76,4 +94,34 @@ public class B
         b.i = 100;
     }
 
+}
+
+class  MyException {
+    private  static final long serialVersionUID =1L;
+    public MyException(String m){
+
+    }
+    public String getMessage(){
+        return "";
+    }
+}
+
+class Policy{
+    String name,type;
+    public Policy(String name,String type){
+        this.name = name;
+        this.type = type;
+    }
+    public String getType(){
+        return this.type;
+    }
+    public String getName(){
+        return this.name;
+    }
+}
+
+
+class MyOtherClass{
+    FileReader aReader;
+    MyOtherClass(){}
 }

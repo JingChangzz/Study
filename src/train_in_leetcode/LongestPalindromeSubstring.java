@@ -2,10 +2,11 @@ package train_in_leetcode;
 
 /**
  * Created by ZhangJing on 2017/4/1.
+ *
+ * 找最长 回文串
  */
 public class LongestPalindromeSubstring {
     public static int length;
-
 
     public static String LongestPalindrome(String s)
     {
@@ -13,7 +14,6 @@ public class LongestPalindromeSubstring {
         int maxLenOfPalindrome = 1;//至少回文长度为1
 
         boolean[][] flag = new boolean[length][length];
-
 
         /**
          * 第一层循环
@@ -40,6 +40,14 @@ public class LongestPalindromeSubstring {
     }
 
     public static void main(String[] args) {
+
+        Integer first = new Integer(3);
+        Integer second = 3;
+        int three = 3;
+        System.out.println(first==second);
+        System.out.println(first==three);
+        Math.round(3.14);
+
         String input = "adereda";
 
         length = input.length();
