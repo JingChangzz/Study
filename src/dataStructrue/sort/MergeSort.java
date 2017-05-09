@@ -1,4 +1,4 @@
-package dataStructrue;
+package dataStructrue.sort;
 
 public class MergeSort {
 

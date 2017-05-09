@@ -1,4 +1,4 @@
-package dataStructrue;
+package dataStructrue.sort;
 
 /**
  * 插入排序
