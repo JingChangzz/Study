@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 /**
  * Created by ZhangJing on 2017/4/11.
+ *
+ * input = m+n;
+ * 使m*n最大
+ *
  */
 public class xiecheng01 {
 

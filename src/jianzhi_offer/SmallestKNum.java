@@ -9,6 +9,7 @@ package jianzhi_offer;
 public class SmallestKNum {
 
     /**
+     * Top K问题！
      * 方法一：时间复杂度O(n)
      * 快排的一趟结束后，左边小于基准
      * 右边大于基准
@@ -74,8 +75,12 @@ public class SmallestKNum {
     }
 
     public static void main(String[] args) {
+
+
         int[] arr = {4,5,1,6,2,7,3,8};
-        int k = 5;
+        int k = 2;
+
+
         int[] result = getLastKNum(arr, k);
 
         for (int i = 0; i < k; i++){

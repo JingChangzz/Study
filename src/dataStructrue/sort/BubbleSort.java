@@ -41,7 +41,7 @@ public class BubbleSort {
 		BubbleSort bubbleSort = new BubbleSort(maxSize);
 		
 		bubbleSort.insert(17);
-		bubbleSort.insert(7);
+		bubbleSort.insert(27);
 		bubbleSort.insert(3);
 		bubbleSort.insert(1);
 		

@@ -1,11 +1,14 @@
 package jianzhi_offer;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Created by ZhangJing on 2017/4/1.
  *
  * 适用于海量数据！
+ *
+ * 堆
  *
  */
 public class SmallestKNumForLargeScale {
@@ -74,10 +77,19 @@ public class SmallestKNumForLargeScale {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4,5,1,6,2,7,3,8};
-        int k = 5;
+//        int[] arr = {4,5,1,6,2,7,3,8};
+//        int k = 5;
+        Scanner scanner = new Scanner(System.in);
+        String in = scanner.nextLine();
+        int k = scanner.nextInt();
+        String[] ins = in.split(" ");
 
-        getLastNum(arr, k);
+        int[] input = new int[ins.length];
+        for(int i=0;i<ins.length;i++){
+            input[i]=Integer.parseInt(ins[i]);
+        }
+
+        getLastNum(input, k);
 
     }
 }

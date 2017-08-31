@@ -1,5 +1,7 @@
 package myTest;
 
+import java.util.HashMap;
+
 class C {
     C() {
         System.out.print("C");
@@ -24,11 +26,25 @@ class test extends A {
         super("B");
         System.out.print("B");
     }
- 
+
+
+
     public static void main(String[] args) {
        // new test();
-    	
-    	
+
+        HashMap<Integer, User> hs = new HashMap<>();
+        User temp = new User();
+        for(int i=0 ; i< 10 ; i++) {
+            temp.id = i;
+            temp.name = String.valueOf(i);
+
+            hs.put(i, temp);
+        }
+
+        for (int i =1; i < hs.size(); i++) {
+            System.out.println(hs.get(i).name + "//**");
+        }
+
     	String _str1="hello";
     	String str2="he"+ new String("llo"); //用+拼接字符串时，会创建一个新对象再返回。
     	String str3 = "he" + "lo";
@@ -69,4 +85,9 @@ class test extends A {
           y=y+"wxy";
           System.out.println(y);
     }
+}
+
+class User{
+    public int id;
+    public String name;
 }
